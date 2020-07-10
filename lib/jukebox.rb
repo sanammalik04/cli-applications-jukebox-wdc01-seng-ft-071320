@@ -23,6 +23,7 @@ def play
   songChoice = gets.strip.to_i
   puts "Now playing #{song[songChoice +1]}."
 end
+
 def run
   puts "Please enter a command: "
   choice = gets.strip
