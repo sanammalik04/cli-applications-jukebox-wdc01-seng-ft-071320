@@ -23,7 +23,17 @@ def jukebox
     list
   elsif choice == "exit" then 
     puts "Goodtbye!"
-  if choice 
+    exit
+  elsif choice == "play" then
+    puts "Please choose a track number"
+    songChoice = gets.strip.to_i
+    puts "Now playing #{song[songChoice +1]}."
+  else
+    puts "Please enter a valid command: help, play, list, or exit"
+  end
+  jukebox
+end
+    
   
 
 
