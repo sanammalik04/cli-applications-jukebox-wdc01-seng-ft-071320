@@ -18,11 +18,11 @@ def exit_jukebox
  puts "Goodbye!"
 end
 
-def play
+def play(songs)
   puts "Please choose a track number"
   songChoice = gets.strip
   songChoice = songChoice.to_i
-  puts "Now playing #{song[songChoice-1]}."
+  puts "Now playing #{songs[songChoice-1]}."
 end
 
 def run(songs)
