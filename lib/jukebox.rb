@@ -12,6 +12,9 @@ def help
 end
 
 def list
+  names.each { |item|
+    puts item
+  }
   puts songs
 end
 
