@@ -8,7 +8,7 @@ def help
 - exit : exits this program"
 end
 
-def list
+def list(songs)
   songs.each { |item, index|
     puts "#{index + 1}. #{item}"
   }
@@ -24,13 +24,13 @@ def play
   puts "Now playing #{song[songChoice +1]}."
 end
 
-def run
+def run(songs)
   puts "Please enter a command: "
   choice = gets.strip
   if choice == "help" then
     help
   elsif choice == "list" then
-    list
+    list(songs)
   elsif choice == "exit" then 
     exit_jukebox
     exit
