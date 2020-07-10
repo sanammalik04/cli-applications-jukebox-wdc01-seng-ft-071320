@@ -12,7 +12,11 @@ def help
 end
 
 def list
-  puts
+  puts songs
+end
+
+def play
+  
 puts "Please enter a command:"
 users_name = gets.strip
  
