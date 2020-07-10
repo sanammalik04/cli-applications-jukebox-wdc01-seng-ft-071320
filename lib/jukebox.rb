@@ -17,7 +17,12 @@ end
 def jukebox
   puts "Please enter a command: "
   choice = gets.strip
-  if 
+  if choice == "help" then
+    help
+  elsif choice == "list" then
+    list
+  elsif choice == "exit" then 
+    puts "Goodtbye!"
   if choice 
   
 
