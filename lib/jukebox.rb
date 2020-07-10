@@ -20,7 +20,8 @@ end
 
 def play
   puts "Please choose a track number"
-  songChoice = gets.strip.to_i
+  songChoice = gets.strip
+  songChoice = songChoice.to_i
   puts "Now playing #{song[songChoice +1]}."
 end
 
