@@ -34,7 +34,7 @@ def run
     exit_jukebox
     exit
   elsif choice == "play" then
-    
+    play
   else
     puts "Please enter a valid command: help, play, list, or exit"
   end
