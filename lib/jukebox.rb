@@ -17,7 +17,8 @@ def list
   }
 end
 
-def play
+def play(choice)
+  
   
 puts "Please enter a command:"
 users_name = gets.strip
