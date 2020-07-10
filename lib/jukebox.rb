@@ -14,9 +14,12 @@ def list
   }
 end
 
-def play(choice)
+def jukebox
+  puts "Please enter a command: "
+  choice = gets.strip
+  if 
   if choice 
   
-puts "Please enter a command:"
-users_name = gets.strip
+
+
  
