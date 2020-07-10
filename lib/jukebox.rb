@@ -19,7 +19,7 @@ def exit_jukebox
 end
 
 def play(songs)
-  puts "Please choose a track number"
+  puts "Please enter a song name or number:"
   songChoice = gets.strip
   songChoice = songChoice.to_i
   puts "Playing #{songs[songChoice-1]}."
@@ -27,7 +27,7 @@ end
 
 def run(songs)
   puts "Please enter a command: "
-  choice = gets.strip
+  choice = gets.chomp
   if choice == "help" then
     help
   elsif choice == "list" then
