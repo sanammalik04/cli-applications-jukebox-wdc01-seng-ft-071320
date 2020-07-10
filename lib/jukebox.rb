@@ -2,6 +2,7 @@
 def say_hello(name)
   "Hi #{name}!"
 end
+
 def help
   puts "I accept the following commands:
 - help : displays this help message
@@ -10,6 +11,8 @@ def help
 - exit : exits this program"
 end
 
+def list
+  puts
 puts "Please enter a command:"
 users_name = gets.strip
  
