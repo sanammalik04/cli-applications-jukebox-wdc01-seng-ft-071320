@@ -14,7 +14,16 @@ def list
   }
 end
 
-def jukebox
+def exit_jukebox
+ puts "Goodbye!"
+end
+
+def play
+  puts "Please choose a track number"
+  songChoice = gets.strip.to_i
+  puts "Now playing #{song[songChoice +1]}."
+end
+def run
   puts "Please enter a command: "
   choice = gets.strip
   if choice == "help" then
@@ -22,16 +31,14 @@ def jukebox
   elsif choice == "list" then
     list
   elsif choice == "exit" then 
-    puts "Goodtbye!"
+    exit_jukebox
     exit
   elsif choice == "play" then
-    puts "Please choose a track number"
-    songChoice = gets.strip.to_i
-    puts "Now playing #{song[songChoice +1]}."
+    
   else
     puts "Please enter a valid command: help, play, list, or exit"
   end
-  jukebox
+  run
 end
     
   jukebox
