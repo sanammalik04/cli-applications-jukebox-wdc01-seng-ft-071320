@@ -12,8 +12,8 @@ def help
 end
 
 def list
-  names.each { |item|
-    puts item
+  songs.each { |item, index|
+    puts 
   }
   puts songs
 end
