@@ -13,7 +13,7 @@ end
 
 def list
   songs.each { |item, index|
-    puts index.to_s "."
+    puts index.to_s + ". " + 
   }
   puts songs
 end
